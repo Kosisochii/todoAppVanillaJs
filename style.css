@@ -1,0 +1,225 @@
+body{
+    background: #fafafa;
+    position: relative;
+
+}
+main{
+    position: absolute;
+    top: 8vh;
+    width: 100%;
+}
+section{
+    margin: 0 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    height: 25vh;
+    width: 100%;
+    background-image: url(images/images/bg-mobile-light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logoContainer{
+    color: white;
+}
+.logoContainer h2{
+    letter-spacing: 10px;
+}
+.logoSide{
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.moonIcon{
+    cursor: pointer;
+}
+form{
+    background-color: white;
+    padding-left: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+input{
+    padding: 20px 0px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+}
+form::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
+    left: 10px;
+}
+.inputContainer{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.createItem{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    letter-spacing:2px;
+    cursor: pointer;
+}
+li{
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px gainsboro;
+    color: #25273c;
+    background: white;
+    list-style: none;
+    padding-left: 60px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
+    left: 10px;
+}
+ul li.check::before{
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+    border-radius: 50%;
+}
+ul li.checked::before{
+    background-image: url(images/images/Picsart_23-03-27_10-54-35-592.png);
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+ul li:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 0px 7px 0px gainsboro;
+}
+.contain ul li:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0px 7px 0px hsl(235, 21%, 11%);
+    border-color: hsl(235, 24%, 19%);
+    border: none;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: maroon;
+    font-style: oblique;
+}
+.contain ul li.checked{
+    color: rgb(158, 14, 14);
+    font-style: oblique;
+}
+.contain form{
+    background: #25273c;
+}
+.contain ul li{
+    background: #25273c;
+    color: #fff;
+    box-shadow: 0 0 5px #25273c;
+}
+.contain input{
+    background: #25273c;
+    color: rgb(180, 179, 179);
+}
+.contain .countContainer{
+    background: #25273c;
+    box-shadow:  0 0 3px #181824;
+}
+.contain .inputContainer{
+    background: #25273c;
+    box-shadow:  0 0 3px #181824;
+}
+ul{
+    list-style: none;
+}
+.myOrders{
+    display: flex;
+    align-items: center;
+}
+.order{
+    margin-left: 20px;
+}
+img{
+    cursor: pointer;
+}
+.countContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 0px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px gainsboro;
+    color: rgb(180, 179, 179);
+    word-spacing: 5px;
+    background-color: white;
+}
+#count{
+    margin-left: 15px;
+}
+.clearSide{
+    margin-right: 15px;
+}
+#all{
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+#all p:first-child{
+    color: blue;
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(148, 148, 148);
+    font-size: 15px;
+    word-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    section{
+        width: 600px;
+        font-size: 25px;
+    }
+    header{
+        background-image: url(images/images/bg-desktop-light.jpg);
+        height: 30vh;
+    }
+    .countContainer{
+        font-size: 20px;
+    }
+    .logoSide{
+        margin: 0 0 30px 0;
+    }
+    input{
+        font-size: 25px;
+    }
+}

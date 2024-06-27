@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TodoApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Container for your background image -->
+        </header>
+        <main>
+            <section>
+                <div class="logoSide">
+                    <div class="logoContainer">
+                        <h2>TODO</h2>
+                    </div>
+    
+                    <div>
+                        <img src="images/images/icon-moon.svg" alt="Moon-icon" class="moonIcon">
+                    </div>
+                </div>
+
+                <div class="inputContainer">
+                    <form>
+                        <input type="text" placeholder="Create a new todo..." class="createItem" id="inputTag">
+                    </form>
+                </div>
+
+                <div class="orderContainer">
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="countContainer all">
+                    <p><span id="count">0</span> items left</p>
+
+                    <p class="clearSide">Clear Completed</p>
+                </div>
+
+                <div class="countContainer" id="all">
+                    <p>All</p>
+
+                    <p>Active</p>
+
+                    <p>Completed</p>
+                </div>
+                <footer>
+                    <div>
+                        <p>Drag and drop to reorder list</p>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
